@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "specifiers": {
+    "npm:@types/webextension-polyfill@~0.12.5": "0.12.5"
+  },
+  "npm": {
+    "@types/webextension-polyfill@0.12.5": {
+      "integrity": "sha512-uKSAv6LgcVdINmxXMKBuVIcg/2m5JZugoZO8x20g7j2bXJkPIl/lVGQcDlbV+aXAiTyXT2RA5U5mI4IGCDMQeg=="
+    }
+  },
+  "workspace": {
+    "members": {
+      "packages/types": {
+        "dependencies": [
+          "npm:@types/webextension-polyfill@~0.12.5"
+        ]
+      }
+    }
+  }
+}

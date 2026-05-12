@@ -1,0 +1,7 @@
+{
+	"name": "@ribbon/schema-codegen",
+	"description": "Generate TypeScript types from Fluxer's OpenAPI schema",
+	"license": "MPL-2.0",
+	"imports": {},
+	"exports": {}
+}

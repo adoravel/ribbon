@@ -1,0 +1,12 @@
+{
+	"permissions": {
+		"wiretap": {
+			"read": ["userscript.js"],
+			"net": true
+		}
+	},
+	"tasks": {
+		"start": "deno run -P=wiretap src/main.ts"
+	},
+	"exclude": ["userscript.js"]
+}

@@ -1,0 +1,25 @@
+{
+	"license": "EUPL-1.2",
+	"workspace": [
+		"./packages/ribbon",
+		"./packages/types",
+		"./packages/userscript",
+		"./tooling/wiretap",
+		"./tooling/schema-codegen"
+	],
+	"tasks": {
+		"wiretap": "deno task --cwd=tooling/wiretap start",
+		"codegen:react": "deno run --allow-net --allow-write scripts/generate-fiber-constants.ts",
+		"build:userscript": "deno task --cwd=packages/userscript build"
+	},
+	"fmt": {
+		"useTabs": true,
+		"trailingCommas": "onlyMultiLine",
+		"operatorPosition": "nextLine"
+	},
+	"lint": {
+		"rules": {
+			"exclude": ["no-explicit-any", "no-slow-types", "ban-types"]
+		}
+	}
+}
